@@ -13,17 +13,6 @@ export const Container = styled.div`
     }
 `;
 
-export const Text = styled.p`
-    font-size: 19.2px;
-    color: white;
-    text-align: center;
-
-    @media (max-width: 600px) {
-        font-size: 16px;
-        line-height: 22px;
-    }
-`;
-
 export const Input = styled.input`
     max-width: 450px;
     width: 100%;
@@ -33,17 +22,32 @@ export const Input = styled.input`
     box-sizing: border-box;
 `;
 
+export const Break = styled.div`
+    flex-basis: 100%;
+    height: 0;
+`;
+
 export const Button = styled.button`
     display: flex;
     align-items: center;
     height: 70px;
     background: #e50914;
+    color: white;
     text-transform: uppercase;
     padding: 0 32px;
     font-size: 26px;
     border: 0;
-    color: white;
     cursor: pointer;
+
+    img {
+        margin-left: 10px;
+        filter: brightness(0) invert(1);
+        width: 24px;
+
+        @media (maw-width: 1000px) {
+            width: 16px;
+        }
+    }
 
     &:hover {
         background: #f40612;
@@ -55,19 +59,15 @@ export const Button = styled.button`
         margin-top: 20px;
         font-weight: bold;
     }
-
-    img {
-        margin-left: 10px;
-        filter: brightness(0) invert(1);
-        width: 24px;
-
-        @media (maw-width: 1000px) {
-            width: 16px;
-        }
-    }
 `;
 
-export const Break = styled.div`
-    flex-basis: 100%;
-    height: 0;
+export const Text = styled.p`
+    font-size: 19.2px;
+    color: white;
+    text-align: center;
+
+    @media (max-width: 600px) {
+        font-size: 16px;
+        line-height: 22px;
+    }
 `;
